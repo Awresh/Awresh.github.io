@@ -131,7 +131,7 @@ img {
   left: 50%;
   border-radius: 50%;
   top: -140px;
-  animation: leftBounce 3s ease-in-out infinite;
+  animation: leftBounce 7s ease-in-out infinite;
 
 }
 @keyframes leftBounce{
