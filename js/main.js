@@ -6,10 +6,8 @@ console.log("inner_yes");
 
     tabsContainer.addEventListener("click",(event)=>{
         let target=event.target.getAttribute("data-target");
-            console.log(target)
         if(event.target.classList.contains("tab-item") && !event.target.classList.contains("active")){
             let target=event.target.getAttribute("data-target");
-            console.log(target)
             tabsContainer.querySelector(".active").classList.remove("outer-shadow","active");
             event.target.classList.add("active","outer-shadow");
 
