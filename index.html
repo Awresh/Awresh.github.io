@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
     <title>Personal Portfolio Website</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
     <!-- font awesome -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <!-- main css -->
@@ -13,12 +14,43 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+      <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <div class="hori-selector">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+          <li class="nav-item active scroll160">
+            <a class="nav-link" href="javascript:void(0);"><i class="fa fa-house-user"></i>Home</a>
+          </li>
+          <li class="nav-item   scroll150">
+            <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-card"></i>About</a>
+          </li>
+          <li class="nav-item scroll130">
+            <a class="nav-link" href="javascript:void(0);"><i class="fa fa-microchip"></i>Skills</a>
+          </li>
+          <li class="nav-item scroll150">
+            <a class="nav-link" href="javascript:void(0);"><i class="fa fa-file-shield"></i>Project</a>
+          </li>
+          <li class="nav-item scroll120">
+            <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Contact</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </nav>
 
     <!---------------------------------------Header---------------------------------------->
 
-    <header class="header">
+    <header id="hamburger" class="header">
       <div class="container">
-        <div class="row justify-content-between">
+        <div  class="row justify-content-between ">
           <div class="logo">
             <a href="index.html">A</a>
           </div>
@@ -176,23 +208,22 @@
               consectetur adipisicing elit. Voluptatum rem consectetur sunt laborum aperiam, ipsa neque totam explicabo
               ducimus, sint ipsum, asperiores at. <br>Nulla reiciendis quod soluta eos, voluptas accusamus.</p>
 
-            <a href="Mohd_Awresh_CV_Resume.pdf"
-              class=" btn-1 outer-shadow hover-in-shadow" download>Download CV</a>
+            <a href="Mohd_Awresh_CV_Resume.pdf" class=" btn-1 outer-shadow hover-in-shadow" download>Download CV</a>
           </div>
         </div>
         <!------------------------About-tab--start---------------------------->
         <div class="row">
           <div class="about-tabs">
-            <span class="tab-item outer-shadow active" data-target=".Skills">Skills</span>
-            <span class="tab-item" data-target="Education">Education</span>
+            <span class="tab-item outer-shadow active" data-target=".skills">Skills</span>
+            <span class="tab-item" data-target=".education">Education</span>
           </div>
         </div>
         <!------------------------About-tab--end---------------------------->
 
 
-        <!------------------------Skill--end---------------------------->
+        <!------------------------Skill--start---------------------------->
         <div class="row">
-          <div class="skills tab-content">
+          <div class="skills tab-content active">
             <div class="row">
               <!------Skill------item--Start----------->
               <div class="skill-item">
@@ -237,6 +268,75 @@
                 </div>
               </div>
               <!------Skill------item--End------------>
+
+              <!------Skill------item--Start----------->
+              <div class="skill-item">
+                <p>Css</p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width:calc(55% - 14px);">
+                    <span>55%</span>
+                  </div>
+                </div>
+              </div>
+              <!------Skill------item--End------------>
+
+              <!------Skill------item--Start----------->
+              <div class="skill-item">
+                <p>Css</p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width:calc(65% - 14px);">
+                    <span>65%</span>
+                  </div>
+                </div>
+              </div>
+              <!------Skill------item--End------------>
+            </div>
+          </div>
+        </div>
+        <!------------------------Skill--end---------------------------->
+
+
+        <!------------------------------Education-Start----------------------->
+        <div class="row">
+          <div class="education tab-content">
+            <div class="row">
+              <div class="timeline">
+                <div class="row">
+                  <!-----------------time-line-start--------->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-graduation-cap icon"></i>
+                      <span>september 2020</span>
+                      <h3>Full stack devloper</h3>
+                      <!-- <h4>Company name,india</h4> -->
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nulla et culpa quis dolorum veniam exercitationem obcaecati, quas nihil voluptate expedita inven ullam.</p>
+                    </div>
+                  </div>
+                  <!-----------------time-line-End--------->
+
+                  <!-----------------time-line-start--------->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-graduation-cap icon"></i>
+                      <span>september 2020</span>
+                      <h3>Full stack devloper</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nulla et culpa quis dolorum veniam exercitationem obcaecati, quas nihil voluptate expedita inven ullam.</p>
+                    </div>
+                  </div>
+                  <!-----------------time-line-End--------->
+
+                  <!-----------------time-line-start--------->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fas fa-graduation-cap icon"></i>
+                      <span>september 2020</span>
+                      <h3>Full stack devloper</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nulla et culpa quis dolorum veniam exercitationem obcaecati, quas nihil voluptate expedita inven ullam.</p>
+                    </div>
+                  </div>
+                  <!-----------------time-line-End--------->
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -244,11 +344,131 @@
 
 
 
-        <!------------------------Skill--end---------------------------->
+
+
+
+
+
+
+
+
+         <!------------------------------Education-End----------------------->
       </div>
     </section>
 
     <!--------------------About---Section----End---------------------------->
+
+
+    <!--------------------------------Project----Section-----Start----------------------------------->
+    <section class="portfolio-section section">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="Latest">Project</h2>
+          </div>
+        </div>
+        <!----------portfolio--filter-start----------->
+        <div class="row">
+          <div class="portfolio-filter">
+            <span class="filter-item outer-shadow active" data-target="Website">Website</span>
+            <span class="filter-item" data-target="Web application">Web application</span>
+          </div>
+        </div>
+        <!-----------portfolio--filter-end------------>
+
+        <!-----------portfolio--section-start------------>
+        <div class="row portfolio-items">
+          <!------------portfolio item start-------------->
+          <div class="portfolio-item">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img src="/img/portfolio/thumb/spark-america-clone.png" alt="spark-america-clone.png">
+                <!----------view project btn---------->
+                <span class="view-project">
+                  <div>
+                    <a href="https://github.com/gShubham7/crowded-push-1335" class=" btn-2 outer-shadow hover-in-shadow" >Source Code</a>
+                    <a href="https://spark-america-clone.netlify.app" class=" btn-2 outer-shadow hover-in-shadow" >Web Viwe</a>
+                  </div>
+                </span>
+              </div>
+              <span><p class="portfolio-item-title">Spark America Clone</p></span>
+              <p> <span><p>Tech Stack</p></span>
+              <h6>HTML, Css, JavaScript</h6>
+              <span><p>Tech Stack</p></span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img src="/img/portfolio/thumb/ToggleTrackclone.png" alt="spark-america-clone.png">
+                <!----------view project btn---------->
+                <span class="view-project">
+                  <div>
+                    <a href="https://github.com/Mohak973/cared-middle-4484" class=" btn-2 outer-shadow hover-in-shadow" >Source Code</a>
+                    <a href="https://toggltrackclone.netlify.app" class=" btn-2 outer-shadow hover-in-shadow" >Web Viwe</a>
+                  </div>
+                </span>
+              </div>
+              <span><p class="portfolio-item-title">Toggle Track Clone</p></span>
+              <p> <span><p>Tech Stack</p></span>
+              <h6>HTML, Css, JavaScript</h6>
+              <span><p>Tech Stack</p></span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img src="/img/portfolio/thumb/TimeCamp.png" alt="spark-america-clone.png">
+                <!----------view project btn---------->
+                <span class="view-project">
+                  <div>
+                    <a href="https://github.com/Awresh/proper-dogs-3804" class=" btn-2 outer-shadow hover-in-shadow" >Source Code</a>
+                    <a href="https://clonetimecamp.netlify.app" class=" btn-2 outer-shadow hover-in-shadow" >Web Viwe</a>
+                  </div>
+                </span>
+              </div>
+              <span><p class="portfolio-item-title">TimeCamp Clone</p></span>
+              <p> <span><p>Tech Stack</p></span>
+              <h6>HTML, Css</h6>
+              <span><p>Tech Stack</p></span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+            </div>
+
+          </div>
+           <!------------portfolio item end-------------->
+
+        </div>
+
+
+
+
+        <!-----------portfolio--section-end------------>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------------------------------Project----Section-----End----------------------------------->
 
 
 
@@ -262,6 +482,11 @@
     <script src="js/main.js"></script>
     <!-- style switcher js -->
     <script src="js/style-switcher.js"></script>
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+    <script src="/js/nav.js"></script>
   </body>
 
 </html>
