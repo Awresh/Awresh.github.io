@@ -1,5 +1,4 @@
 //--------------------------------about section tab-----------------
-console.log("inner_yes");
 (()=>{
     let aboutSection=document.querySelector(".about-section"),
     tabsContainer=document.querySelector(".about-tabs");
