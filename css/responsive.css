@@ -82,8 +82,16 @@
     .portfolio-section .portfolio-item{
         max-width:100%;
     }
+    .effect-2{
+        bottom: 10%;
+    }
 }
 
+@media(max-width:999px){
+    .effect-2{
+        bottom: 0%;
+    }
+}
 
 @media(max-width: 767px ) and (min-width:600px){
     .contact-section .contact-item,
@@ -94,6 +102,10 @@
         max-width: 100%;
 
     }
+    .effect-2{
+        bottom: 10%;
+    }
+    
     .tab-content .row{
         display: grid;
         grid-template-columns: repeat(2,1fr);
