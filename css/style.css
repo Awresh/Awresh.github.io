@@ -270,7 +270,7 @@ img {
 .header .hamburger-btn{
     height: 2.5rem;
     width: 2.5rem;
-    /*background-color: blue;*/
+    background-color:var(--bg-black-50);
     cursor: pointer;
     border-radius: 50%;
     display: flex;
@@ -389,8 +389,7 @@ img {
   line-height: 35px;
   border-radius: 50%;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  top: 20px;
   cursor: pointer;
   text-align: center;
   /* justify-content: center;
@@ -516,7 +515,7 @@ img {
 
 /*--------------------About---Section----Start----------------------------*/
 .about-section{
-  padding: 80px 0 80px;
+  padding: 80px 0 0px;
   min-height: 100vh;
 
 }

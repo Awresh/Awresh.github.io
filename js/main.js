@@ -54,31 +54,19 @@ function bodyScrollingToggle(){
 
 
 function ScroolAbout(){
-    window.scroll({
-        top:680,
-        left:0,
-    });
+    window.location.href="#about";
 }
 
 function ScroolProject(){
-    window.scroll({
-        top:1830,
-        left:0,
-    });
+    window.location.href="#project";
 }
 
 function ScroolHome(){
-    window.scroll({
-        top:0,
-        left:0,
-    });
+    window.location.href="#home";
 }
 
 function ScroolContact(){
-    window.scroll({
-        top:2640,
-        left:0,
-    });
+    window.location.href="#contact";
 }
 
 /*********************Hide all section Spect active***************** */
