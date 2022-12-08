@@ -32,6 +32,7 @@
   }
   .home-section .full-screen {
     padding: 100px 0;
+    min-height: 0vh;
   }
   .home-section .home-img .img-box {
     display: none;
@@ -78,9 +79,7 @@
   .portfolio-section .portfolio-item {
     max-width: 100%;
   }
-  .home-section .full-screen{
-    min-height: 0vh;
-  }
+  
 }
 
 @media (max-width: 767px) and (min-width: 600px) {
@@ -126,6 +125,7 @@
   }
   .home-section .full-screen {
     padding: 100px 0;
+    min-height: 1vh;
   }
   .home-section .home-img .img-box {
     display: none;
@@ -160,8 +160,5 @@
   }
   .about-section .timeline .timeline-item:last-child {
     margin-bottom: 0;
-  }
-  .home-section .full-screen{
-    min-height: 0vh;
   }
 }
