@@ -78,6 +78,9 @@
   .portfolio-section .portfolio-item {
     max-width: 100%;
   }
+  .home-section .full-screen{
+    min-height: 0vh;
+  }
 }
 
 @media (max-width: 767px) and (min-width: 600px) {
@@ -157,5 +160,8 @@
   }
   .about-section .timeline .timeline-item:last-child {
     margin-bottom: 0;
+  }
+  .home-section .full-screen{
+    min-height: 0vh;
   }
 }
