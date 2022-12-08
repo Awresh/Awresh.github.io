@@ -29,12 +29,6 @@ function test(){
 	});
     $("#navbarSupportedContent").on("click","li",function(e){
 
-        window.scroll({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          });
-
     })
 }
 $(document).ready(function(){
@@ -64,6 +58,9 @@ jQuery(document).ready(function($){
 	// Add active class to target link
 	target.parent().addClass('active');
 });
+
+
+
 
 
 

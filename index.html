@@ -26,19 +26,19 @@
             <div class="right"></div>
           </div>
           <li class="nav-item active scroll160">
-            <a class="nav-link" href="javascript:void(0);"><i class="fa fa-house-user"></i>Home</a>
-          </li>
-          <li class="nav-item   scroll150">
-            <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-card"></i>About</a>
-          </li>
-          <li class="nav-item scroll130">
-            <a class="nav-link" href="javascript:void(0);"><i class="fa fa-microchip"></i>Skills</a>
+            <a class="nav-link" href="#home "><i class="fa fa-house-user"></i>Home</a>
           </li>
           <li class="nav-item scroll150">
-            <a class="nav-link" href="javascript:void(0);"><i class="fa fa-file-shield"></i>Project</a>
+            <a class="nav-link " href="#about"><i class="far fa-address-card"></i>About</a>
+          </li>
+          <li class="nav-item scroll130">
+            <a class="nav-link " href="#skills"><i class="fa fa-microchip"></i>Skills</a>
+          </li>
+          <li class="nav-item scroll150">
+            <a class="nav-link" href="#project"><i class="fa fa-file-shield"></i>Project</a>
           </li>
           <li class="nav-item scroll120">
-            <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Contact</a>
+            <a class="nav-link" href="#contact"><i class="far fa-address-book"></i>Contact</a>
           </li>
           
           
@@ -70,19 +70,20 @@
       <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
       <div class="nav-menu-inner">
         <ul>
-          <li><a href="#" class="inner-shadow active">Home</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">About</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">Services</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">Portfolio</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
-
+          <li><a href="#home" class="link-item inner-shadow active" onclick="ScroolHome()">Home</a></li>
+          <li><a href="#about" class="link-item outer-shadow hover-in-shadow" onclick="ScroolAbout()">About</a></li>
+          <!-- <li><a href="#Skills" class="link-item outer-shadow hover-in-shadow">Skills</a></li> -->
+          <li><a href="#project" class="link-item outer-shadow hover-in-shadow" onclick="ScroolProject()">Project</a></li>
+          <li><a href="#contact" class="link-item outer-shadow hover-in-shadow" onclick="ScroolContact()">Contact</a></li>
       </div>
 
       <!--------------------------Copyrigth-----text--------------------------------->
 
       <p class="copyright-text">&copy;2022 Mohd Awresh</p>
     </nav>
+    <div class="fade-out-effect">
+
+    </div>
 
     <!------------------------------------Navigatin----end---------------------------->
 
@@ -91,7 +92,7 @@
     <!---------------------------------Home---Section----Start---------------------------->
 
 
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
 
       <!--------------------Effect---wrap----Start---------------------------->
       <div class="effect-wrap">
@@ -154,7 +155,7 @@
             <p>Hello</p>
             <h2>I'm Mohd Awresh</h2>
             <h1>Java Back-End Devloper</h1>
-            <a href="#" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+            <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
 
           </div>
 
@@ -177,7 +178,7 @@
 
     <!--------------------About---Section----Start---------------------------->
 
-    <section class="about-section section">
+    <section class="about-section section" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -211,7 +212,7 @@
           </div>
         </div>
         <!------------------------About-tab--start---------------------------->
-        <div class="row">
+        <div class="row"  id="skills">
           <div class="about-tabs">
             <span class="tab-item outer-shadow active" data-target=".skills">Skills</span>
             <span class="tab-item" data-target=".education">Education</span>
@@ -359,7 +360,7 @@
 
 
     <!--------------------------------Project----Section-----Start----------------------------------->
-    <section class="portfolio-section section">
+    <section class="portfolio-section section" id="project">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -524,7 +525,7 @@
 
     <!--------------------------Contact----Section-----Start-------------------->
 
-    <section class="contact-section section">
+    <section class="contact-section section" id="contact">
       <div class="container">
         <div class="row">
           <div class="section-title">
