@@ -125,3 +125,45 @@ function ScroolContact(){
         }
     })
 })();
+
+
+
+
+/***************************contact Send sms**************/
+document.querySelector("form").addEventListener("submit",send);
+function send(){
+    let form=document.querySelector("form");
+    event.preventDefault();
+    let name=form.Name.value;
+    let email=form.Email.value;
+    let Subject=form.Subject.value;
+    let message=form.Message.value;
+    if(name!=="" && email!=="" && Subject !=="" && message !==""){
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "experiments.worlds@gmail.com",
+            Password : "744B077B5059C15C7A01BDB547F7755D3361",
+            To : 'experiments.worlds@gmail.com',
+            From : "experiments.worlds@gmail.com",
+            Subject : "Mail From Contact Form",
+            Body : `Subject :- ${Subject} <br/>
+                    Name :- ${name} <br/>
+                    Email :- ${email} <br/>
+                    Message :- ${message}
+            `
+        }).then(
+            (message)=>{
+                if(message=="OK"){
+                    swal("Success","thank you for contact me","success");
+                    form.reset();
+                }
+
+                else swal("Not Send", message, "error");
+            }     
+          );
+    }
+    else{
+        //swal("please fill all required fields")
+        swal("Not Send", "please fill all required fields", "error");
+    } 
+}
