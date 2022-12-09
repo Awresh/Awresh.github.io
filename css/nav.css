@@ -166,7 +166,7 @@
     } 
 }
 
-
+/*************Alert*********************/
 
 .swal-button{
     background-color: var(--skin-color);
@@ -176,4 +176,13 @@
 }
 .swal-modal{
     background-color: var(--bg-black-50);
+}
+.swal-icon--success:after, .swal-icon--success:before{
+    background: transparent;
+}
+.swal-icon--success__hide-corners{
+    background-color: transparent;
+}
+.swal-button-container .swal-button:hover{
+    background-color: var(--skin-color);
 }
