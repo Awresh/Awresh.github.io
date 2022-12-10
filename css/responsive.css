@@ -93,7 +93,6 @@
 
   .tab-content .row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
   .about-section .skills .skill-item {
     max-width: 95%;
