@@ -169,7 +169,10 @@
 /*************Alert*********************/
 
 .swal-button{
-    background-color: var(--skin-color);
+    background-color: var(--bg-black-50);
+    box-shadow: var(--outer-shadow);
+    color: var(--skin-color);
+    border: none;
 }
 .swal-text{
     color: var(--text-black-700);
@@ -184,5 +187,6 @@
     background-color: transparent;
 }
 .swal-button-container .swal-button:hover{
-    background-color: var(--skin-color);
+    background-color: var(--bg-black-50);
+    box-shadow: var(--inner-shadow);
 }
