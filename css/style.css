@@ -366,6 +366,9 @@ img {
   z-index: 1000;
   animation: fadeOut 0.3s ease-out;
 }
+.portfolio-item h6{
+  color: var(--text-black-600);
+}
 
 @keyframes fadeOut{
   0%{
@@ -865,8 +868,12 @@ img {
 .portfolio-section .portfolio-item-inner p{
   font-size: 16px;
   margin: 10px 0 0;
+  font-weight: 500;
   color: var(--text-black-600);
   text-transform: capitalize;
+}
+h3>em>em{
+  font-size: 10px;
 }
 
 /*----------------------------Contact--Section-------------------*/
