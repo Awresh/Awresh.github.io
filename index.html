@@ -12,11 +12,12 @@
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <script src="https://kit.fontawesome.com/19ae1c0515.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-custom navbar-mainbg">
+    <nav class="navbar navbar-expand-custom navbar-mainbg" id="first_nav">
       <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
@@ -46,6 +47,7 @@
 
         </ul>
       </div>
+      <div> <a href="Mohd_Awresh_Resume.pdf" class=" btn-1  hover-in-shadow" download>Download CV</a></div>
     </nav>
 
     <!---------------------------------------Header---------------------------------------->
@@ -78,6 +80,9 @@
           <li><a href="#project" class="link-item outer-shadow hover-in-shadow" onclick="ScroolProject()">Project</a>
           </li>
           <li><a href="#contact" class="link-item outer-shadow hover-in-shadow" onclick="ScroolContact()">Contact</a>
+          </li>
+          <li><a href="Mohd_Awresh_Resume.pdf" download class="link-item outer-shadow hover-in-shadow"
+              onclick="hideNavMenu()">Download</a>
           </li>
       </div>
 
@@ -224,6 +229,7 @@
           <div class="about-tabs">
             <span class="tab-item outer-shadow active" data-target=".skills">Skills</span>
             <span class="tab-item" data-target=".education">Education</span>
+            <span class="tab-item" data-target=".github">Github</span>
           </div>
         </div>
         <!------------------------About-tab--end---------------------------->
@@ -351,6 +357,59 @@
 
 
 
+        <div class="row">
+          <div class="github tab-content">
+            <div class="row">
+              <div class="timeline">
+                <div class="row">
+                  <!-----------------time-line-start--------->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fa-brands fa-github icon"></i>
+                      <p class="gitStatus">&nbsp;<img align="center"
+                          src="https://github-readme-stats.vercel.app/api?username=awresh&show_icons=true&locale=en"
+                          alt="awresh" /></p>
+                    </div>
+                  </div>
+                  <!-----------------time-line-End--------->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fa-brands fa-github icon"></i>
+                      <p class="gitStatus"><img align="center"
+                          src="https://github-readme-stats.vercel.app/api/top-langs?username=awresh&show_icons=true&locale=en&layout=compact"
+                          alt="awresh" /></p>
+                    </div>
+                  </div>
+                  <!-----------------time-line-End--------->
+
+
+
+                  <!-----------------time-line-start--------->
+                  <div class="timeline-item">
+                    <div class="timeline-item-inner outer-shadow">
+                      <i class="fa-brands fa-github icon"></i>
+                      <p class="gitStatus"><img align="center"
+                          src="https://github-readme-streak-stats.herokuapp.com/?user=awresh&" alt="awresh" /></p>
+                    </div>
+                  </div>
+                  <!-----------------time-line-End--------->
+                </div>
+                
+              </div>
+              <div class="timeline calendar_github">
+                <div class="calendar  outer-shadow">
+                  <!-- Loading stuff -->
+                  Loading the data just for you.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+
 
 
 
@@ -397,7 +456,7 @@
                     <a href="https://github.com/gShubham7/crowded-push-1335"
                       class=" btn-2 outer-shadow hover-in-shadow">Source Code</a>
                     <a href="https://spark-america-clone.netlify.app" class=" btn-2 outer-shadow hover-in-shadow">Web
-                      Viwe</a>
+                      view</a>
                   </div>
                 </span>
               </div>
@@ -414,8 +473,8 @@
               </span>
               <h6>
                 SparkAmerica brings people, organizations, and cities
-              together on a single tech platform to participate in our
-              free and fun annual calendar.
+                together on a single tech platform to participate in our
+                free and fun annual calendar.
               </h6>
               </p>
 
@@ -433,7 +492,7 @@
                     <a href="https://github.com/Mohak973/cared-middle-4484"
                       class=" btn-2 outer-shadow hover-in-shadow">Source Code</a>
                     <a href="https://toggltrackclone.netlify.app" class=" btn-2 outer-shadow hover-in-shadow">Web
-                      Viwe</a>
+                      view</a>
                   </div>
                 </span>
               </div>
@@ -450,8 +509,8 @@
               </span>
               <h6>
                 Toggl Track is a time-tracking app with detailed insights and an opportunity to
-              optimize your workflow by identifying areas where you
-              can improve.
+                optimize your workflow by identifying areas where you
+                can improve.
               </h6>
               </p>
 
@@ -468,7 +527,7 @@
                   <div>
                     <a href="https://github.com/Awresh/proper-dogs-3804"
                       class=" btn-2 outer-shadow hover-in-shadow">Source Code</a>
-                    <a href="https://clonetimecamp.netlify.app" class=" btn-2 outer-shadow hover-in-shadow">Web Viwe</a>
+                    <a href="https://clonetimecamp.netlify.app" class=" btn-2 outer-shadow hover-in-shadow">Web view</a>
                   </div>
                 </span>
               </div>
@@ -481,9 +540,10 @@
               <h6> HTML | CSS </h6>
               <span>
                 <p>Description</p>
-              </span> 
+              </span>
               <h6>
-                TimeCamp is a simple, yet feature-rich time tracking app to help you gain insights into yourprojects and tasks.
+                TimeCamp is a simple, yet feature-rich time tracking app to help you gain insights into yourprojects and
+                tasks.
               </h6>
               </p>
 
@@ -507,7 +567,7 @@
                     <a href="https://github.com/masai-course/mohd_fp05_021/tree/master/unit-3/sprint-2/day-3/assignments/weather%20app"
                       class=" btn-2 outer-shadow hover-in-shadow">Source Code</a>
                     <a href="https://weatherwebowne.netlify.app/" class=" btn-2 outer-shadow hover-in-shadow">Web
-                      Viwe</a>
+                      view</a>
                   </div>
                 </span>
               </div>
@@ -517,13 +577,14 @@
               <p> <span>
                   <p>Tech Stack</p>
                 </span>
-              <h6>HTML  | CSS | JavaScript | Weather
-              Report Rest Api | Google Map</h6>
+              <h6>HTML | CSS | JavaScript | Weather
+                Report Rest Api | Google Map</h6>
               <span>
                 <p>Description</p>
               </span>
               <h6>
-                This Weather apps enable users to get instant alerts regarding weather conditions. Weather apps are the simplest method to know about updates on the upcoming weather.
+                This Weather apps enable users to get instant alerts regarding weather conditions. Weather apps are the
+                simplest method to know about updates on the upcoming weather.
               </h6>
               </p>
 
@@ -541,7 +602,7 @@
                     <a href="https://github.com/masai-course/mohd_fp05_021/tree/master/unit-3/unit-3_211/sprint-1/day-2/assignments/alarm"
                       class=" btn-2 outer-shadow hover-in-shadow">Source Code</a>
                     <a href="https://alarm-awresh.netlify.app" class=" btn-2 outer-shadow hover-in-shadow">Web
-                      Viwe</a>
+                      view</a>
                   </div>
                 </span>
               </div>
@@ -556,7 +617,8 @@
                 <p>Description</p>
               </span>
               <h6>
-                The web alarm (or sometimes just an alarm) is a clock that is designed to alert an individual at a specified time.
+                The web alarm (or sometimes just an alarm) is a clock that is designed to alert an individual at a
+                specified time.
               </h6>
               </p>
 
@@ -573,7 +635,7 @@
                   <div>
                     <a href="https://github.com/masai-course/mohd_fp05_021/tree/master/unit-3/unit-3_211/sprint-1/day-2/assignments/Todo"
                       class=" btn-2 outer-shadow hover-in-shadow">Source Code</a>
-                    <a href="https://awreshtodo.netlify.app/" class=" btn-2 outer-shadow hover-in-shadow">Web Viwe</a>
+                    <a href="https://awreshtodo.netlify.app/" class=" btn-2 outer-shadow hover-in-shadow">Web view</a>
                   </div>
                 </span>
               </div>
@@ -589,7 +651,8 @@
                 <p>Description</p>
               </span>
               <h6>ToDo App is a kind of app that generally used to maintain our day-to-day tasks and
-                It is helpful in planning our daily schedules. We can add more tasks at any time and delete a task that is completed. 
+                It is helpful in planning our daily schedules. We can add more tasks at any time and delete a task that
+                is completed.
               </h6>
               </p>
 
@@ -714,6 +777,12 @@
     <script src="/js/nav.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script>
+      GitHubCalendar(".calendar", "Awresh");
+      // or enable responsive functionality
+      GitHubCalendar(".calendar", "Awresh", { responsive: true });
+  </script>
   </body>
 
 </html>

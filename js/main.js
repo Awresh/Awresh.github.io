@@ -68,6 +68,18 @@ function ScroolHome(){
 function ScroolContact(){
     window.location.href="#contact";
 }
+function fadeOut(){
+    document.querySelector(".fade-out-effect").classList.add("active");
+    setTimeout(()=>{
+        document.querySelector(".fade-out-effect").classList.remove("active");
+    },300)
+}
+function hideNavMenu(){
+    navMenu=document.querySelector(".nav-menu"),
+    navMenu.classList.remove("open");
+    bodyScrollingToggle();
+    fadeOut();
+}
 
 /*********************Hide all section Spect active***************** */
 

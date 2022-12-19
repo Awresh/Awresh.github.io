@@ -769,11 +769,18 @@ img {
   color: var(--text-black-600);
   margin: 0;
 }
-.about-section .timeline .timeline-item-inner p{
+.about-section .timeline .timeline-item-inner p:not(.gitStatus){
   font-size: 16px;
   color: var(--text-black-600);
   line-height: 26px;
   margin:15px 0 0;
+}
+.gitStatus{
+  display: flex;
+  justify-content: center;
+}
+.gitStatus img{
+  object-fit: fill;
 }
 /*--------------------About---Section----End--------------------------*/
 
@@ -961,4 +968,33 @@ h3>em>em{
   text-align: right;
   padding: 0 15px;
 }
-
+.navbar-expand-custom  {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-expand-custom .btn-1{
+  background-color: var(--bg-black-50);
+  color: var(--bg-black-900);
+  font-size: 13px;
+}
+.navbar-expand-custom .btn-1:hover{
+  color: var(--skin-color);
+}
+.calendar_github{
+  padding: 10px 15px;
+  margin-top: 40px;
+  display: block;
+}
+.calendar_github .calendar{
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+.calendar_github::before{
+  display: none;
+}

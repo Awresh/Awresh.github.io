@@ -149,21 +149,25 @@
 } */
 
 
-@media(min-width: 620px){
+@media(min-width: 771px){
 	#hamburger{
         display: none;
     }
 }
 
 
-@media (max-width: 619px){
+@media (max-width: 770px){
     #navbarSupportedContent{
         display: none;
     }
+
     .effect-3{
         right: 30px;
 
     } 
+    #first_nav{
+        display: none;
+    }
 }
 
 /*************Alert*********************/
