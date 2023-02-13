@@ -1,7 +1,9 @@
 function bodyScrollingToggle() {
     document.body.classList.toggle("stop-scrolling");
 }
-
+function resume() {
+    window.open("https://drive.google.com/file/d/15yxVeDICMAZRzwp8cvrOUD10dLB1emDL/view?usp=sharing", "_blank");
+}
 /*********Navigation menu************ */
 
 (() => {
