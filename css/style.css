@@ -802,6 +802,9 @@ img {
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .portfolio-section .portfolio-item-img img {
   border-radius: 5px;
@@ -809,7 +812,7 @@ img {
   transition: all 0.3s ease;
 }
 .portfolio-section .portfolio-item-inner:hover .portfolio-item-img img {
-  transform: translateY(-25px);
+  /* transform: translateY(-25px); */
 }
 .portfolio-section .portfolio-item-img {
   position: relative;
@@ -980,6 +983,16 @@ h3 > em > em {
   gap: 10px;
   color: var(--text-black-600);
 }
- .calendar_github text.ContributionCalendar-label {
+.calendar_github text.ContributionCalendar-label {
   fill: var(--text-black-600);
 }
+
+.source_code {
+  display: flex;
+  justify-content: space-between;
+}
+/* .view-project{
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+} */
