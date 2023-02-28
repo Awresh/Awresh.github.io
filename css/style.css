@@ -811,9 +811,9 @@ img {
   width: 100%;
   transition: all 0.3s ease;
 }
-.portfolio-section .portfolio-item-inner:hover .portfolio-item-img img {
-  /* transform: translateY(-25px); */
-}
+/* .portfolio-section .portfolio-item-inner:hover .portfolio-item-img img {
+   transform: translateY(-25px); 
+} */
 .portfolio-section .portfolio-item-img {
   position: relative;
 }
@@ -974,6 +974,7 @@ h3 > em > em {
   gap: 31px;
   padding: 20px 20px;
   border-radius: 5px;
+  margin-bottom: 30px;
 }
 .tools div {
   display: flex;

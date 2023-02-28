@@ -2,7 +2,7 @@ function bodyScrollingToggle() {
     document.body.classList.toggle("stop-scrolling");
 }
 function resume() {
-    window.open("https://drive.google.com/file/d/1Z6l7m5Nbr6wx5eOU4g-QMJIMJFGD6qLm/view?usp=share_link", "_blank");
+    window.open("https://drive.google.com/file/d/1mB1vmXR9NYTvL7eFTVcjIdvizJQl8AYL/view?usp=sharing", "_blank");
 }
 /*********Navigation menu************ */
 
