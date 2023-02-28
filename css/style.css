@@ -980,3 +980,6 @@ h3 > em > em {
   gap: 10px;
   color: var(--text-black-600);
 }
+ .calendar_github text.ContributionCalendar-label {
+  fill: var(--text-black-600);
+}
