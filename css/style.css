@@ -997,3 +997,10 @@ h3 > em > em {
   display: flex;
   flex-direction: column;
 } */
+.section-title > #contact_link {
+  height: auto;
+  min-height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
