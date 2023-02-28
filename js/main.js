@@ -2,7 +2,7 @@ function bodyScrollingToggle() {
     document.body.classList.toggle("stop-scrolling");
 }
 function resume() {
-    window.open("https://drive.google.com/file/d/15yxVeDICMAZRzwp8cvrOUD10dLB1emDL/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1Z6l7m5Nbr6wx5eOU4g-QMJIMJFGD6qLm/view?usp=share_link", "_blank");
 }
 /*********Navigation menu************ */
 
@@ -110,7 +110,7 @@ function hideNavMenu() {
             aboutSection.querySelector(".tab-content.active").classList.remove("active");
 
             aboutSection.querySelector(target).classList.add("active")
-            console.log(target)
+
         }
     })
 })();
