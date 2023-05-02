@@ -2,7 +2,7 @@ function bodyScrollingToggle() {
     document.body.classList.toggle("stop-scrolling");
 }
 function resume() {
-    window.open("https://drive.google.com/file/d/1mB1vmXR9NYTvL7eFTVcjIdvizJQl8AYL/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1k9RfU5Di9OTVpg91eJd3t20Uxl2wSjMo/view?usp=sharing", "_blank");
 }
 /*********Navigation menu************ */
 
@@ -55,20 +55,35 @@ function resume() {
 })();
 
 
-function ScroolAbout() {
-    window.location.href = "#about";
+function ScrollAbout() {
+    setTimeout(scroll, 100);
+    function scroll() {
+        window.location.href = "#about"
+    }
 }
 
-function ScroolProject() {
-    window.location.href = "#project";
+function ScrollProject() {
+    setTimeout(scroll, 100);
+    function scroll() {
+        window.location.href = "#project";
+    }
+
 }
 
-function ScroolHome() {
-    window.location.href = "#home";
+function ScrollHome() {
+    setTimeout(scroll, 100);
+    function scroll() {
+        window.location.href = "#home";
+    }
+
 }
 
-function ScroolContact() {
-    window.location.href = "#contact";
+function ScrollContact() {
+    setTimeout(scroll, 100);
+    function scroll() {
+        window.location.href = "#contact";
+    }
+
 }
 function fadeOut() {
     document.querySelector(".fade-out-effect").classList.add("active");
@@ -168,7 +183,7 @@ function send() {
         }).then(
             (message) => {
                 if (message == "OK") {
-                    swal("Success", "thank you for contact me", "success");
+                    swal("Success", "Thank you for contact me 😊", "success");
                     form.reset();
                 }
 
@@ -178,6 +193,6 @@ function send() {
     }
     else {
         //swal("please fill all required fields")
-        swal("Not Send", "please fill all required fields", "error");
+        swal("Not Send", "Kindly fill in all mandatory fields 🙄", "error");
     }
 }
