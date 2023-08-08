@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 :root {
-  --skin-color: blueviolet;
+  --skin-color:  #0A192F;
   --skin-color1: #ec9412;
   --skin-color2: #1fc586;
   --skin-color3: #2eb1ed;
@@ -112,7 +112,7 @@ img {
 .effect-1 {
   width: 30px;
   height: 30px;
-  border: 4px solid #8a49ff;
+  border: 4px solid #0A192F;
   right: 10%;
   bottom: 15%;
   animation: spin 10s linear infinite;
@@ -480,6 +480,9 @@ img {
   margin: 0;
   text-transform: capitalize;
 }
+/* .text-effect {
+  white-space: pre; 
+} */
 
 .home-section .home-text .btn-1 {
   margin-top: 25px;
@@ -634,7 +637,7 @@ img {
   position: relative;
 }
 .about-section .skills .skill-item .progress-bar {
-  background-color: var(--text-black-600);
+  background-color: var(--skin-color);
   height: 6px;
   left: 7px;
   top: 7px;
@@ -875,6 +878,7 @@ h3 > em > em {
   text-align: center;
   border-radius: 5px;
   width: 100%;
+  cursor: pointer;
 }
 .contact-section .contact-item-inner i {
   font-size: 25px;
@@ -948,7 +952,7 @@ h3 > em > em {
 }
 .navbar-expand-custom .btn-1 {
   background-color: var(--bg-black-50);
-  color: var(--bg-black-900);
+  /* color: var(--bg-black-900); */
   font-size: 13px;
 }
 .navbar-expand-custom .btn-1:hover {
@@ -1039,7 +1043,7 @@ h3 > em > em {
   transition: all 0.3s ease;
 }
 #return-to-top:hover {
-  background: rgba(137, 43, 226, 0.651);
+  background: #153668;
 }
 #return-to-top:hover i {
   color: #fff;

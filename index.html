@@ -11,7 +11,10 @@
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
     <script src="https://kit.fontawesome.com/19ae1c0515.js" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZPV4F3MSR"></script>
@@ -84,7 +87,7 @@
           <li><a href="#home" class="link-item inner-shadow active" onclick="ScrollHome()">Home</a></li>
           <li><a href="#about" class="link-item outer-shadow hover-in-shadow" onclick="ScrollAbout()">About</a></li>
           <!-- <li><a href="#Skills" class="link-item outer-shadow hover-in-shadow">Skills</a></li> -->
-          <li><a href="#project" class="link-item outer-shadow hover-in-shadow" onclick="ScrollProject()">Project</a>
+          <li><a href="#project" class="link-item outer-shadow hover-in-shadow" onclick="ScrollProject()">Projects</a>
           </li>
           <li><a href="#contact" class="link-item outer-shadow hover-in-shadow" onclick="ScrollContact()">Contact</a>
           </li>
@@ -168,9 +171,9 @@
       <div class="container">
         <div class="row full-screen align-items-center">
           <div class="home-text">
-            <p>Hello</p>
-            <h2>I'm Mohd Awresh</h2>
-            <h1>Java Back-End Devloper</h1>
+            <p class="text-effect">Hello!</p>
+            <h2 class="text-effect">I'm Mohd Awresh,</h2>
+            <h1 class="text-effect">a Java Back-End Developer</h1>
             <a href="#about" class=" btn-1 outer-shadow hover-in-shadow">More About Me</a>
 
           </div>
@@ -839,24 +842,23 @@
         <div class="row">
           <!----------------------Contact--Start--------------->
           <div class="contact-item">
-            <div class="contact-item-inner outer-shadow">
+            <div class="contact-item-inner outer-shadow" onclick="makeCall('+918604846089')">
               <i class="fas fa-phone"></i>
               <span>Phone</span>
               <p>+918604846089</p>
             </div>
           </div>
-          <!----------------------Contact--End--------------->
-          <!----------------------Contact--Start--------------->
+
           <div class="contact-item">
-            <div class="contact-item-inner outer-shadow">
-              <i class="fas fa-envelope"></i>
+            <div class="contact-item-inner outer-shadow" onclick="sendEmail('Mo.awresh6205@gmail.com')">
+              <i class=" fas fa-envelope"></i>
               <span>Email</span>
               <p>Mo.awresh6205@gmail.com</p>
             </div>
           </div>
           <!----------------------Contact--End--------------->
           <!----------------------Contact--Start--------------->
-          <div class="contact-item">
+          <div class=" contact-item">
             <div class="contact-item-inner outer-shadow">
               <i class="fas fa-map-marker-alt"></i>
               <span>Address</span>
@@ -931,9 +933,9 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     <script>
-      GitHubCalendar(".calendar", "Awresh");
+      GitHubCalendar(".calendar", "awresh");
       // or enable responsive functionality
-      GitHubCalendar(".calendar", "Awresh", { responsive: true });
+      GitHubCalendar(".calendar", "awresh", { responsive: true });
 
 
 

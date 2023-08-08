@@ -196,3 +196,16 @@ function send() {
         swal("Not Send", "Kindly fill in all mandatory fields 🙄", "error");
     }
 }
+
+
+
+
+// make call And mail
+function makeCall(phoneNumber) {
+    window.location.href = 'tel:' + phoneNumber;
+  }
+
+  function sendEmail(emailAddress) {
+    window.location.href = 'mailto:' + emailAddress;
+  }
+// Name text effect
