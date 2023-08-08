@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
-:root{
-    /* --skin-color:#fb839e; */
-	--skin-color:blueviolet;
-  --skin-color1:#ec9412;
-  --skin-color2:#1fc586;
-  --skin-color3:#2eb1ed;
-  --skin-color4:#cc3a3b;
-  --bg-black-900:#000000;
-  --bg-black-100:#dddddd;
-  --bg-black-50 :#eff0f4;
-  --text-black-900:#000000;
-  --text-black-700:#555555;
-  --text-black-600:#666666;
-  --text-black-300:#bbbbbb;
-  --outer-shadow:3px 3px 3px #d0d0d0,-3px -3px 3px #f8f8f8;
-  --outer-shadow-0:0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
-  --inner-shadow:inset 3px 3px 3px #d0d0d0 ,inset -3px -3px 3px #f8f8f8;
-  
+:root {
+  --skin-color:  #0A192F;
+  --skin-color1: #ec9412;
+  --skin-color2: #1fc586;
+  --skin-color3: #2eb1ed;
+  --skin-color4: #cc3a3b;
+  --bg-black-900: #000000;
+  --bg-black-100: #dddddd;
+  --bg-black-50: #eff0f4;
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
 }
 * {
 	margin: 0;

@@ -11,10 +11,7 @@
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-  />
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <script src="https://kit.fontawesome.com/19ae1c0515.js" crossorigin="anonymous"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZPV4F3MSR"></script>
@@ -252,6 +249,27 @@
             <div class="row">
               <!------Skill------item--Start----------->
               <div class="skill-item">
+                <p>HTML</p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width:calc(75% - 14px);">
+                    <span>75%</span>
+                  </div>
+                </div>
+              </div>
+              <!------Skill------item--End------------>
+              <!------Skill------item--Start----------->
+              <div class="skill-item">
+                <p>CSS</p>
+                <div class="progress inner-shadow">
+                  <div class="progress-bar" style="width:calc(70% - 14px);">
+                    <span>70%</span>
+                  </div>
+                </div>
+              </div>
+              <!------Skill------item--End------------>
+
+              <!------Skill------item--Start----------->
+              <div class="skill-item">
                 <p>Java</p>
                 <div class="progress inner-shadow">
                   <div class="progress-bar" style="width:calc(80% - 14px);">
@@ -270,12 +288,8 @@
                   </div>
                 </div>
               </div>
-              <!------Skill------item--End------------>
-
-
-              <!------Skill------item--Start----------->
               <div class="skill-item">
-                <p>HTML</p>
+                <p>React</p>
                 <div class="progress inner-shadow">
                   <div class="progress-bar" style="width:calc(70% - 14px);">
                     <span>70%</span>
@@ -283,16 +297,8 @@
                 </div>
               </div>
               <!------Skill------item--End------------>
-              <!------Skill------item--Start----------->
-              <div class="skill-item">
-                <p>CSS</p>
-                <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width:calc(60% - 14px);">
-                    <span>60%</span>
-                  </div>
-                </div>
-              </div>
-              <!------Skill------item--End------------>
+
+
 
               <!------Skill------item--Start----------->
               <div class="skill-item">
@@ -309,8 +315,8 @@
               <div class="skill-item">
                 <p>Springboot</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width:calc(65% - 14px);">
-                    <span>65%</span>
+                  <div class="progress-bar" style="width:calc(75% - 14px);">
+                    <span>75%</span>
                   </div>
                 </div>
               </div>
@@ -869,35 +875,56 @@
         </div>
         <div class="row">
           <div class="contact-form">
-            <form>
+            <form id="contactForm">
               <div class="row">
                 <div class="w-50">
-                  <div class="input-group outer-shadow hover-in-shadow">
-                    <input class="input-control" id="Name" type="text" placeholder="Name">
+                  <div>
+                    <div class="input-group outer-shadow hover-in-shadow">
+                      <input class="input-control" id="Name" type="text" placeholder="Name">
+                    </div>
+                    <div class="error-message" id="nameError"></div>
                   </div>
-                  <div class="input-group outer-shadow hover-in-shadow">
-                    <input class="input-control" id="Email" type="email" placeholder="Email">
+                  <br>
+
+                  <div>
+
+                    <div class="input-group outer-shadow hover-in-shadow">
+                      <input class="input-control" id="Email" type="email" placeholder="Email">
+
+                    </div>
+                    <div class="error-message" id="emailError"></div>
                   </div>
-                  <div class="input-group outer-shadow hover-in-shadow">
-                    <input class="input-control" id="Subject" type="text" placeholder="Subject">
+                  <br>
+                  <div>
+                    <div class="input-group outer-shadow hover-in-shadow">
+                      <input class="input-control" id="Subject" type="text" placeholder="Subject">
+
+                    </div>
+                    <div class="error-message" id="subjectError"></div>
                   </div>
+                  <br>
                 </div>
                 <div class="w-50">
                   <div class="input-group outer-shadow hover-in-shadow">
                     <textarea class="input-control" id="Message" placeholder="Message"></textarea>
-                  </div>
-                </div>
 
+                  </div>
+                  
+                  <div class="error-message" id="messageError"></div>
+                </div>
               </div>
               <div class="row">
                 <div class="submit-btn">
-                  <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+                  <button type="submit" class="btn-1 outer-shadow hover-in-shadow" id="submitButton">
+                    <span id="buttonText">Send Message</span>
+                    <div class="spinner" id="spinner"></div>
+                  </button>
                 </div>
               </div>
             </form>
           </div>
-
         </div>
+
 
 
 

@@ -159,43 +159,142 @@ function hideNavMenu() {
 
 
 /***************************contact Send sms**************/
-document.querySelector("form").addEventListener("submit", send);
-function send() {
-    let form = document.querySelector("form");
+document.querySelector("#contactForm").addEventListener("submit", send);
+
+function clearError(errorElement) {
+    errorElement.textContent = "";
+}
+
+function send(event) {
     event.preventDefault();
-    let name = form.Name.value;
-    let email = form.Email.value;
-    let Subject = form.Subject.value;
-    let message = form.Message.value;
-    if (name !== "" && email !== "" && Subject !== "" && message !== "") {
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "moa16259@gmail.com",
-            Password: "DAB435188A632F22213CBE5BA5638CD1B299",
-            To: 'moa16259@gmail.com',
-            From: "moa16259@gmail.com",
-            Subject: "Mail From Contact Form",
-            Body: `Subject :- ${Subject} <br/>
+
+    let form = event.target;
+
+
+    let submitButton = form.querySelector("#submitButton"); // Get the submit button
+    let buttonText = form.querySelector("#buttonText"); // Get the button text span
+    let spinner = form.querySelector("#spinner"); // Get the spinner element
+
+    let name = form.querySelector("#Name").value;
+    let email = form.querySelector("#Email").value;
+    let subject = form.querySelector("#Subject").value;
+    let message = form.querySelector("#Message").value;
+
+    let nameError = form.querySelector("#nameError");
+    let emailError = form.querySelector("#emailError");
+    let subjectError = form.querySelector("#subjectError");
+    let messageError = form.querySelector("#messageError");
+
+    nameError.textContent = "";
+    emailError.textContent = "";
+    subjectError.textContent = "";
+    messageError.textContent = "";
+
+    let isValid = true;
+
+    if (name.trim() === "") {
+        nameError.textContent = "Name is required";
+        isValid = false;
+    }
+    if (email.trim() === "") {
+        emailError.textContent = "Email is required";
+        isValid = false;
+    }
+    if (subject.trim() === "") {
+        subjectError.textContent = "Subject is required";
+        isValid = false;
+    }
+    if (message.trim() === "") {
+        messageError.textContent = "Message is required";
+        isValid = false;
+    }
+
+    if (isValid) {
+        // Disable the button and show the spinner during sending
+        submitButton.disabled = true;
+        buttonText.innerText = "Sending..."; // Change the button text
+        spinner.style.display = "inline-block";
+        const telegram_bot_id = "6023147125:AAFNIQXu0pEbTEeXqLy3DF7f26ThBkMmG14"; // Replace with your Telegram bot ID
+        const payload = {
+            chat_id: -1001940338600, // Replace with the desired chat ID
+            text: `Subject: ${subject}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
+        };
+
+        const telegramApiUrl = `https://api.telegram.org/bot${telegram_bot_id}/sendMessage`;
+
+        // Telegram API call
+        fetch(telegramApiUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "cache-control": "no-cache"
+            },
+            body: JSON.stringify(payload)
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                // Re-enable the button and hide the spinner after sending
+                submitButton.disabled = false;
+                spinner.style.display = "none";
+                buttonText.innerText = "Send Message"; // Restore the original button text
+                if (data.ok) {
+
+
+                    // Sending email using Email.js
+                    Email.send({
+                        Host: "smtp.elasticemail.com",
+                        Username: "moa16259@gmail.com",
+                        Password: "DAB435188A632F22213CBE5BA5638CD1B299",
+                        To: 'moa16259@gmail.com',
+                        From: "moa16259@gmail.com",
+                        Subject: "Mail From Contact Form",
+                        Body: `Subject :- ${subject} <br/>
                     Name :- ${name} <br/>
                     Email :- ${email} <br/>
-                    Message :- ${message}
-            `
-        }).then(
-            (message) => {
-                if (message == "OK") {
-                    swal("Success", "Thank you for contact me 😊", "success");
-                    form.reset();
+                    Message :- ${message}`
+                    }).then(
+                        (emailMessage) => {
+                            if (emailMessage === "OK") {
+                                swal("Success", "Thank you for contacting me 😊", "success");
+                                form.reset();
+                            } else {
+                                swal("Not Sent", "An error occurred while sending the message!", "error");
+                            }
+                        }
+                    );
+                } else {
+                    swal("Not Sent", "An error occurred while sending the message!", "error");
                 }
-
-                else swal("Not Send", message, "error");
-            }
-        );
-    }
-    else {
-        //swal("please fill all required fields")
-        swal("Not Send", "Kindly fill in all mandatory fields 🙄", "error");
+            })
+            .catch((error) => {
+                swal("Not Sent", "An error occurred while sending the message!", "error");
+            });
     }
 }
+
+// Add event listeners for "input" event to clear error messages
+document.querySelector("#Name").addEventListener("input", () => clearError(nameError));
+document.querySelector("#Email").addEventListener("input", () => clearError(emailError));
+document.querySelector("#Subject").addEventListener("input", () => clearError(subjectError));
+document.querySelector("#Message").addEventListener("input", () => clearError(messageError));
+
+
+// document.querySelector("form").addEventListener("submit", send);
+// function send() {
+//     let form = document.querySelector("form");
+//     event.preventDefault();
+//     let name = form.Name.value;
+//     let email = form.Email.value;
+//     let Subject = form.Subject.value;
+//     let message = form.Message.value;
+//     if (name !== "" && email !== "" && Subject !== "" && message !== "") {
+
+//     }
+//     else {
+//         //swal("please fill all required fields")
+//         swal("Not Send", "Kindly fill in all mandatory fields 🙄", "error");
+//     }
+// }
 
 
 
@@ -203,9 +302,9 @@ function send() {
 // make call And mail
 function makeCall(phoneNumber) {
     window.location.href = 'tel:' + phoneNumber;
-  }
+}
 
-  function sendEmail(emailAddress) {
+function sendEmail(emailAddress) {
     window.location.href = 'mailto:' + emailAddress;
-  }
+}
 // Name text effect
