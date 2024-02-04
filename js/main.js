@@ -245,17 +245,75 @@ function send(event) {
                         Host: "smtp.elasticemail.com",
                         Username: "moa16259@gmail.com",
                         Password: "DAB435188A632F22213CBE5BA5638CD1B299",
-                        To: 'moa16259@gmail.com',
+                        To: 'mo.awresh6205@gmail.com',
                         From: "moa16259@gmail.com",
-                        Subject: "Mail From Contact Form",
-                        Body: `Subject :- ${subject} <br/>
-                    Name :- ${name} <br/>
-                    Email :- ${email} <br/>
-                    Message :- ${message}`
+                        Subject: "New Contact Form Submission",
+                        Body: `
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                                <style>
+                                    body {
+                                        font-family: Arial, sans-serif;
+                                        background-color: #f4f4f4;
+                                        color: #333;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+                                    .container {
+                                        width: 80%;
+                                        margin: 20px auto;
+                                        background: #fff;
+                                        padding: 20px;
+                                        border-radius: 8px;
+                                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                    }
+                                    .header {
+                                        background-color: #007bff;
+                                        color: white;
+                                        padding: 10px;
+                                        text-align: center;
+                                        border-radius: 8px 8px 0 0;
+                                    }
+                                    .content {
+                                        padding: 20px;
+                                    }
+                                    .footer {
+                                        text-align: center;
+                                        padding: 10px;
+                                        font-size: 0.8em;
+                                        color: #666;
+                                    }
+                                </style>
+                            </head>
+                            <body>
+                                <div class="container">
+                                    <div class="header">
+                                        <h2>New Contact Form Submission</h2>
+                                    </div>
+                                    <div class="content">
+                                        <p><strong>Dear Mohd Awresh,</strong></p>
+                                        <p>We have received a new inquiry via the contact form on our website. Here are the details:</p>
+                                        <p>
+                                        <strong>Subject:</strong> ${subject}<br>
+                                        <strong>Name:</strong> ${name}<br>
+                                        <strong>Email:</strong> ${email}<br>
+                                        <br>
+                                        <strong>Message:</strong><br>
+                                        ${message}</p>
+                                        <p>Please review this inquiry </p>
+                                    </div>
+                                    <div class="footer">
+                                        <p>This is an automated message from Contact Form System.</p>
+                                    </div>
+                                </div>
+                            </body>
+                            </html>
+                        `
                     }).then(
                         (emailMessage) => {
                             if (emailMessage === "OK") {
-                                swal("Success", "Thank you for contacting me 😊", "success");
+                                swal("Success", "Thank you for contacting us 😊", "success");
                                 form.reset();
                             } else {
                                 swal("Not Sent", "An error occurred while sending the message!", "error");
