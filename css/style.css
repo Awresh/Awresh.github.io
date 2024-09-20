@@ -659,6 +659,7 @@ img {
   flex: 0 0 100%;
   max-width: 100%;
   position: relative;
+  overflow: auto;
 }
 .about-section .timeline::before {
   content: "";
